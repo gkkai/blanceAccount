@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    tools:context="fragmen.MineFragment">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/image_exit"
+            android:textSize="17sp"
+            android:textColor="@color/white_ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="退出账号"
+            android:src="@mipmap/shezhi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <widget.CircleImageView
+            android:src="@mipmap/header"
+            android:id="@+id/headerview"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></widget.CircleImageView>
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/white_ffffff"
+            android:id="@+id/tv_account"
+            android:text="账号 ：卡卡 87990"
+            android:gravity="center"
+            android:layout_marginTop="170dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:textColor="#222222"
+        android:textSize="18sp"
+        android:text="财务库"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/textView" />
+
+
+            <TextView
+                android:layout_marginTop="300dp"
+                android:textColor="@color/white_ffffff"
+                android:background="@mipmap/button"
+                android:textSize="17sp"
+                android:text="账单查询"
+                android:id="@+id/text_account_query"
+                android:layout_width="130dp"
+                android:gravity="center"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="300dp"
+                android:textSize="17sp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/button"
+                android:textColor="@color/white_ffffff"
+                android:text="我的账单"
+                android:id="@+id/text_myaccount"
+                android:layout_width="130dp"
+                android:layout_height="80dp" />
+
+</RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

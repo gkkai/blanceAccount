@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <widget.ImageCycleView
+        android:id="@+id/icvView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         />
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:text="对账情况"
+           android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingRight="20dp"/>
+
+
+</LinearLayout>

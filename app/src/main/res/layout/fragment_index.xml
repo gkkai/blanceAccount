@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout style="@style/ActionBar"
+        android:background="@color/backgroud">
+
+
+
+    <TextView
+        android:background="@color/backgroud"
+    android:id="@+id/tv_title_train"
+    style="@style/ActionBar.CenterTitle"
+        android:textColor="@color/white_ffffff"
+    android:text="业务链" />
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="70dp"
+            android:requiresFadingEdge="none"
+            android:dropDownVerticalOffset="40dp"
+            android:background="#0000"
+            />
+        <View
+            android:layout_marginTop="47dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue"></View>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <widget.ImageCycleView
+                android:background="@mipmap/banner"
+                android:id="@+id/icvView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:paddingTop="7dp"
+                android:text="对账情况"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/text_year"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:textColor="#222222"
+                android:textSize="16sp"
+
+                android:text="2018" />
+
+            <widget.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:stretchMode="columnWidth"
+                android:listSelector="@android:color/transparent"
+                android:verticalSpacing="@dimen/margin_10dp"></widget.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

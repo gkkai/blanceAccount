@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroud"
+    android:layout_height="match_parent"
+    tools:context="com.example.kk.blanceaccount.AccountDetailBActivity">
+    <RelativeLayout style="@style/ActionBar"
+        android:background="@color/backgroud">
+
+        <ImageView style="@style/ActionBar.LeftImage"
+            android:background="@color/backgroud"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:textColor="@color/white_ffffff"
+            android:textSize="19sp"
+            android:id="@+id/tv_title_train"
+            style="@style/ActionBar.CenterTitle"
+            android:text="账务项目详情" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="47dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"></View>
+    <ScrollView
+        android:layout_marginTop="48dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+
+
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/imave_account_status"
+                    android:background="@mipmap/success"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/tv_account_status"
+                    android:textSize="20sp"
+                    android:gravity="center"
+android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:textColor="@color/white_ffffff"
+                    android:text="对账成功"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp" />
+                <TextView
+
+                    android:gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white_ffffff"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="债权单位"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/text_zq"
+                    android:gravity="right"
+                    android:textSize="14sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="130dp"
+                    android:textColor="@color/textb"
+                    android:text="神南产业发展有限公司"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginLeft="245dp"
+                    android:id="@+id/tv_debt_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="债务单位"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginLeft="245dp"
+                    android:id="@+id/text_zw"
+                    android:textSize="14sp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/textb"
+                    android:text="神南产业发展有限公司"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_start"
+                android:layout_marginTop="150dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="期初余额"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/imag_qu_status"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:background="@color/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/textView2" />
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="12sp"
+                        android:text="自有物资及工程劳务"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:id="@+id/tv_zq_qu_zy_wz"
+                        android:gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="115dp"
+                        android:textSize="12sp"
+                        android:text="999,999,999,999.99"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:id="@+id/tv_zw_qu_zy_wz"
+                        android:gravity="left"
+                        android:textSize="12sp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="9,999,999,999,999.99"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="60dp"
+                        android:text="自有质保金"
+                        android:textSize="12sp"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:id="@+id/tv_zq_qu_zy_zb"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="115dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/tv_zw_qu_zy_zb"
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="100dp"
+                        android:textSize="12sp"
+                        android:text="挂靠项目总金额"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="115dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_sum_zq_gk_sum"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="245dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_sum_zw_gk_sum"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_jiaoyi"
+                android:layout_below="@id/rl_start"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="交易金额"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/image_byjy_satus"
+                    android:layout_marginLeft="100dp"
+                    android:background="@mipmap/red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginTop="29dp"
+                    android:background="@color/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp">
+
+                    <TextView
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/diandina"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="本月交易金额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                         />
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp">
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="12sp"
+                            android:text="自有物资及工程劳务"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_zq_byjy_zy_wz"
+                            android:gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_zw_bujy_zy_wz"
+                            android:gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="60dp"
+                            android:text="自有质保金"
+                            android:textSize="12sp"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:id="@+id/tv_zq_byjy_zy_zb"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:id="@+id/tv_zw_bujy_zy_zb"
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="100dp"
+                            android:textSize="12sp"
+                            android:text="挂靠项目总金额"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_sum_zq_byjy_gk_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_sum_zw_byjy_gk_sum"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:drawableLeft="@mipmap/diandina"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="157dp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/white_ffffff"
+                        android:gravity="center_vertical"
+                        android:text="本年累计交易金额"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="170dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp">
+                        <TextView
+                            android:textColor="@color/white_ffffff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:text="自有总计金额"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_zy_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_zy_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="60dp"
+                            android:textSize="12sp"
+                            android:text="自有物资及工程劳务"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_sum_zq_byjy_zy_wz"
+                            android:gravity="right"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_sum_zw_bujy_zy_wz"
+                            android:gravity="left"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="100dp"
+                            android:textSize="12sp"
+                            android:text="自有质保金"
+                            android:layout_width="140dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:id="@+id/tv_sum_zq_byjy_zy_zb"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:id="@+id/tv_sum_zw_byjy_zy_zb"
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="140dp"
+                            android:textSize="12sp"
+                            android:text="自有累计暂估金额"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_wd_zgjy"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="140dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_wd_zgjy"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="180dp"
+                            android:text="自有累计未达帐项"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="180dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_wd_zy"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="180dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_wd_zy"/>
+
+                        <TextView
+                            android:textColor="@color/white_ffffff"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="240dp"
+                            android:textStyle="bold"
+                            android:text="挂靠总计金额"
+                            android:textSize="12sp"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="280dp"
+                            android:text="挂靠物资以及工程劳务"
+                            android:textSize="12sp"
+                            android:layout_width="180dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="280dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_gk_wu"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="280dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_gk_wu"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="320dp"
+                            android:textSize="12sp"
+                            android:text="挂靠累计暂估金额"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="320dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byjy_wd_gk_zgjy"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="320dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byjy_wd__gk_zgjy"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="360dp"
+                            android:text="挂靠累计未达帐项"
+                            android:textSize="12sp"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="360dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byje_wd_gk"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="360dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byje_wd_gk"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tl_zf"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/rl_jiaoyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white_ffffff"
+                    android:text="收支金额"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/image_zf_status"
+                    android:layout_marginLeft="100dp"
+                    android:background="@mipmap/red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginTop="29dp"
+                    android:background="@color/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@mipmap/diandina"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="本月收支金额"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp" />
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp">
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="12sp"
+                            android:text="自有物资及工程劳务"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_zq_byzf_zy_wz"
+                            android:gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="115dp"
+
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_zw_buzf_zy_wz"
+                            android:gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="60dp"
+                            android:text="自有质保金"
+                            android:textSize="12sp"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:id="@+id/tv_zq_qu_byzf_zy_zb"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:id="@+id/tv_zw_qu_buzf_zy_zb"
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="100dp"
+                            android:textSize="12sp"
+                            android:text="挂靠项目总金额"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_sum_zq_byzf_gk_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_sum_zw_byzf_gk_sum"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@mipmap/diandina"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="157dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="本年累计交易金额"
+                        android:layout_width="250dp"
+                        android:layout_height="20dp" />
+                    <RelativeLayout
+                        android:layout_marginTop="170dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:text="自有物资及工程劳务"
+                            android:textSize="12sp"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_sum_zq_byzf_zy_wz"
+                            android:gravity="right"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:id="@+id/tv_sum_zw_buzf_zy_wz"
+                            android:gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="245dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="60dp"
+                            android:text="自有质保金"
+                            android:textSize="12sp"
+                            android:layout_width="140dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:id="@+id/tv_sum_zq_qu_byzf_zy_zb"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="115dp"
+                            android:textSize="12sp"
+                            android:text="¥ 678902"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:id="@+id/tv_sum_zw_qu_buzf_zy_zb"
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp" />
+
+
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="100dp"
+                            android:text="挂靠项目总额"
+                            android:textSize="12sp"
+                            android:layout_width="180dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="right"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="115dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zq_byzf_gk_sum"/>
+                        <TextView
+                            android:textColor="@color/textb"
+                            android:gravity="left"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="245dp"
+                            android:text="¥ 678902"
+                            android:textSize="12sp"
+                            android:layout_width="115dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/tv_zw_byzf_gk_sum"/>
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_end"
+                android:layout_below="@id/tl_zf"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white_ffffff"
+                    android:text="期末余额"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/image_end_status"
+                    android:layout_marginLeft="100dp"
+                    android:background="@mipmap/red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginTop="29dp"
+                    android:background="@color/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+                    <TextView
+                        android:textColor="@color/white_ffffff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+
+                        android:text="自有总计金额"
+                        android:layout_width="160dp"
+                        android:textSize="12sp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="115dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zq_end_zy_sum"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zw_end_zy_sum"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="60dp"
+                        android:textSize="12sp"
+                        android:text="自有物资及工程劳务"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:id="@+id/tv_zq_end_zy_wz"
+                        android:gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="115dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:id="@+id/tv_zw_end_zy_wz"
+                        android:gravity="left"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="245dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="100dp"
+                        android:textSize="12sp"
+                        android:text="自有质保金"
+                        android:layout_width="140dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:id="@+id/tv_zq_end_zy_zb"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="115dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/tv_zw_end_zy_zb"
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="245dp"
+                        android:textSize="12sp"
+                        android:text="¥ 678902"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:text="自有累计暂估金额"
+                        android:textSize="12sp"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginLeft="115dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zq_end_zgjy"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zw_end_zgjy"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="180dp"
+                        android:text="自有累计未达帐项"
+                        android:textSize="12sp"
+                        android:layout_width="160dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginLeft="115dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zq_end_wd_zy"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zw_end_wd_zy"/>
+
+
+                    <TextView
+                        android:textColor="@color/white_ffffff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="240dp"
+                        android:textStyle="bold"
+                        android:text="挂靠总计金额"
+                        android:layout_width="160dp"
+                        android:textSize="12sp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="right"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginLeft="115dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zq_end_wd_sum"/>
+                    <TextView
+                        android:textColor="@color/textb"
+                        android:gravity="left"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginLeft="245dp"
+                        android:text="¥ 678902"
+                        android:textSize="12sp"
+                        android:layout_width="115dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/tv_zw_end_wd_sum"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+<RelativeLayout
+    android:layout_below="@id/rl_end"
+    android:layout_marginTop="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:paddingLeft="5dp"
+        android:textColor="@color/white_ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="未达帐调整以及说明"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:background="@color/text2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/text_wd_zq"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white_ffffff"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"
+        android:text="债权单位：神南产业发展有限公司"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:padding="10dp"
+        android:textColor="@color/textb"
+        android:id="@+id/text_wd_zq_sm"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_account_detail_"/>
+    <TextView
+        android:id="@+id/text_wd_zw"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/white_ffffff"
+        android:layout_marginTop="190dp"
+        android:text="债务单位：神南产业发展有限公司"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:textColor="@color/textb"
+        android:id="@+id/text_wd_zw_sm"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_account_detail_"/>
+</RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

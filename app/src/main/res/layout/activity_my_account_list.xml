@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kk.blanceaccount.MyAccountListActivity">
+    <RelativeLayout style="@style/ActionBar"
+        android:background="@color/backgroud">
+
+        <ImageView style="@style/ActionBar.LeftImage"
+            android:background="@color/backgroud"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:textColor="@color/white_ffffff"
+            android:textSize="19sp"
+            android:id="@+id/tv_title_train"
+            style="@style/ActionBar.CenterTitle"
+            android:text="账务项目列表" />
+        <TextView
+            android:id="@+id/text_build_account"
+            android:textSize="15sp"
+            android:textColor="@color/white_ffffff"
+            android:layout_centerVertical="true"
+            android:text="新建"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <widget.XListView
+        android:layout_marginTop="50dp"
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="@color/colorGrayLine"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        ></widget.XListView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_nodata"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/mieyoushuju"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:textSize="19sp"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/backgroud"
+            android:text="暂无数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

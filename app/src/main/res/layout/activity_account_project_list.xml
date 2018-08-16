@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kk.blanceaccount.AccountProjectListActivity"
+    android:background="@color/backgroud">
+
+
+    <RelativeLayout style="@style/ActionBar"
+        android:background="@color/backgroud">
+
+        <ImageView style="@style/ActionBar.LeftImage"
+            android:background="@color/backgroud"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/back_withe"/>
+
+        <TextView
+            android:textColor="@color/white_ffffff"
+            android:textSize="19sp"
+            android:id="@+id/tv_title_train"
+            style="@style/ActionBar.CenterTitle"
+            android:text="账务项目列表" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="47dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue"></View>
+
+    <widget.XListView
+        android:layout_marginTop="48dp"
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="#1A729D"
+        android:dividerHeight="20dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        ></widget.XListView>
+
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/rl_nodata"
+    android:layout_marginTop="48dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/mieyoushuju"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:textSize="19sp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white_ffffff"
+        android:text="暂无数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+</RelativeLayout>

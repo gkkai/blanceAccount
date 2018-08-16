@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    >
+
+
+        <ui.DrawableCenterTextView
+            android:id="@+id/mouth"
+            android:drawableLeft="@mipmap/green"
+            android:gravity="center_vertical"
+            android:textColor="@color/white_ffffff"
+            android:textSize="17sp"
+            android:drawablePadding="5dp"
+            android:text="1月"
+            android:layout_width="match_parent"
+            android:background="@mipmap/button"
+            android:layout_height="80dp"
+             />
+
+
+</RelativeLayout>

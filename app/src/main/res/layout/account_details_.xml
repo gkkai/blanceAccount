@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/xuanxiangka"
+
+    >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivTab"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="交易金额"
+            android:textSize="12sp"
+            android:textColor="@drawable/main_selector_text"
+            android:id="@+id/tvTabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_view"
+        android:layout_width="match_parent"
+        android:layout_height="2.3dp"></TextView>
+    <View
+        android:layout_centerVertical="true"
+        android:background="@color/white_ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_width="0.2dp"
+        android:layout_height="30dp"></View>
+</RelativeLayout>

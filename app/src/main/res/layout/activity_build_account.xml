@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kk.blanceaccount.BuildAccountActivity">
+    <RelativeLayout style="@style/ActionBar"
+        android:background="@color/backgroud">
+
+        <ImageView style="@style/ActionBar.LeftImage"
+            android:background="@color/backgroud"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:textColor="@color/white_ffffff"
+            android:textSize="19sp"
+            android:id="@+id/tv_title_train"
+            style="@style/ActionBar.CenterTitle"
+            android:text="新建对账项目" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:background="@color/colorGrayLine"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></TextView>
+
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="类型"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/text_zq"
+                    android:gravity="center"
+                    android:layout_marginLeft="120dp"
+                    android:text="债权"
+                    android:drawableLeft="@mipmap/weixuanze"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/text_zw"
+                    android:gravity="center"
+                    android:layout_marginLeft="230dp"
+                    android:text="债务"
+                    android:drawableLeft="@mipmap/xuanze"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:id="@+id/text_comepany_name"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="对账单位"
+                    android:layout_marginTop="51dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/text_danwei_xunaze"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/next"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="10dp"
+                    android:hint="请选择"
+                    android:textColor="#222222"
+                    android:layout_marginTop="51dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:id="@+id/text_time"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="对账月份"
+                    android:layout_marginTop="102dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/text_yuefen_xunaze"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/next"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="10dp"
+                    android:hint="请选择"
+                    android:textColor="#222222"
+                    android:layout_marginTop="102dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/xuanxiangka"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="期初余额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text_qu_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="总计： ¥ 0.00 "
+                        android:textColor="@color/white_ffffff" />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—物质及工程劳务"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_qc_zy_wu"
+                    android:inputType="number|numberDecimal"
+                    android:hint="请输入金额"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textCursorDrawable="@drawable/exittext"
+
+                    />
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—质保金"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_qc_zy_zb"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="151dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="挂靠工程款"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_qc_gk_gck"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="20dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:gravity="right|center_vertical"
+                    android:textSize="@dimen/textSize_14sp"></EditText>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/xuanxiangka"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="本月交易金额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text_byjy_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="总计： ¥ 0.00 "
+                        android:textColor="@color/white_ffffff" />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—物质及工程劳务"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_byjy_zy_wu"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—质保金"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_byjy_zy_zb"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="151dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="挂靠工程款"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_bujy_gk_gck"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:textSize="@dimen/textSize_14sp"></EditText>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/xuanxiangka"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="本月支付金额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text_zf_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="总计： ¥ 0.00"
+                        android:textColor="@color/white_ffffff" />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—物质及工程劳务"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_byjy_zf_wu"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—质保金"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_byjy_zf_zb"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="151dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="挂靠工程款"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_bujy_zf_gck"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"></EditText>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/xuanxiangka"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white_ffffff"
+                        android:text="累计未达帐项以及暂估金额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/text_wd_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="总计： ¥ 0.00"
+                        android:textColor="@color/white_ffffff" />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—未达帐项"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_wd_zy"
+                    android:hint="请输入金额"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:inputType="number|numberDecimal"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="自有项目—累计暂估金额"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_zglj_zy"
+                    android:hint="请输入金额"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="101dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+                android:background="@color/colorGrayLine"
+                android:layout_marginTop="151dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="挂靠项目—未达帐"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_gk_wd"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="152dp"
+                    android:layout_width="150dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"></EditText>
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="202dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="挂靠项目—累计暂估金额"
+                    android:layout_marginTop="203dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/edit_gk_zgje"
+                    android:hint="请输入金额"
+                    android:inputType="number|numberDecimal"
+                    android:layout_marginTop="203dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/textSize_14sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"></EditText>
+
+
+                <TextView
+                    android:background="@color/colorGrayLine"
+                    android:layout_marginTop="253dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="未达帐项调整以及说明（选填）："
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:hint="未达帐项调整以及说明"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/color_a5a5a5"
+                    android:id="@+id/edit_wd_miaoshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/shape_wd_miaoshu_"
+                    android:maxLength="14"
+                    android:textCursorDrawable="@drawable/exittext"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:textSize="@dimen/textSize_14sp"></EditText>
+                <TextView
+                    android:id="@+id/text_sumit"
+                    android:text="提交"
+                    android:textColor="@color/white_ffffff"
+                    android:gravity="center"
+                    android:background="@mipmap/login2"
+                    android:layout_marginTop="260dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

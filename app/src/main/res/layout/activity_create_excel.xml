@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ffffff"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/list_ll"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="NO." />
+
+                <EditText
+                    android:id="@+id/a1"
+                    style="@style/company_detail_et"
+                    android:gravity="top" />
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="被检查单位" />
+
+                <EditText
+                    android:id="@+id/a2"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="联系人" />
+
+                <EditText
+                    android:id="@+id/a3"
+                    style="@style/company_detail_et" />
+
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="单位地址" />
+
+
+                <EditText
+                    android:id="@+id/a4"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:id="@+id/a5"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="许可证号" />
+
+                <EditText
+                    android:id="@+id/a6"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="检查日期" />
+
+                <EditText
+                    android:id="@+id/a7"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="检查类型 列行 年度第几次" />
+
+                <EditText
+                    android:id="@+id/a8"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="非列行" />
+
+                <EditText
+                    android:id="@+id/a9"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="是否联合检查" />
+
+                <EditText
+                    android:id="@+id/a10"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="工作场所" />
+
+                <EditText
+                    android:id="@+id/a11"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="场所名称" />
+
+                <EditText
+                    android:id="@+id/a12"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="场所检测情况" />
+
+                <EditText
+                    android:id="@+id/a13"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="单位性质" />
+
+                <EditText
+                    android:id="@+id/a14"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="年度评估报告" />
+
+                <EditText
+                    android:id="@+id/a15"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="非密封场所" />
+
+                <EditText
+                    android:id="@+id/a16"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="使用核素" />
+
+                <EditText
+                    android:id="@+id/a17"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="放射源共几枚" />
+
+                <EditText
+                    android:id="@+id/a18"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="I 类" />
+
+                <EditText
+                    android:id="@+id/a19"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅱ 类" />
+
+                <EditText
+                    android:id="@+id/a20"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅲ 类" />
+
+                <EditText
+                    android:id="@+id/a21"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅳ 类" />
+
+                <EditText
+                    android:id="@+id/a22"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅴ 类" />
+
+                <EditText
+                    android:id="@+id/a23"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="放射装置共几台 " />
+
+                <EditText
+                    android:id="@+id/a24"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="I 类 " />
+
+                <EditText
+                    android:id="@+id/a25"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅱ 类 " />
+
+                <EditText
+                    android:id="@+id/a26"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="Ⅲ 类 " />
+
+                <EditText
+                    android:id="@+id/a27"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="环评验收" />
+
+                <EditText
+                    android:id="@+id/a28"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="辐射工作人数" />
+
+                <EditText
+                    android:id="@+id/a29"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="中级培训" />
+
+                <EditText
+                    android:id="@+id/a30"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="初级培训" />
+
+                <EditText
+                    android:id="@+id/a31"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="未参加培训" />
+
+                <EditText
+                    android:id="@+id/a32"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="个人剂量监测" />
+
+                <EditText
+                    android:id="@+id/a33"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="监测人数" />
+
+                <EditText
+                    android:id="@+id/a34"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="未监测人数" />
+
+                <EditText
+                    android:id="@+id/a35"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="转让审批情况" />
+
+                <EditText
+                    android:id="@+id/a36"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="备案情况" />
+
+                <EditText
+                    android:id="@+id/a37"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="检查意见" />
+
+                <EditText
+                    android:id="@+id/a38"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="检查人员签字" />
+
+                <EditText
+                    android:id="@+id/a39"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <LinearLayout
+                style="@style/list_ll">
+
+                <TextView
+                    style="@style/company_detail_tv"
+                    android:text="被检查单位签字" />
+
+                <EditText
+                    android:id="@+id/a40"
+                    style="@style/company_detail_et" />
+
+            </LinearLayout>
+
+            <View style="@style/lines_style" />
+
+            <Button
+                android:id="@+id/btn_execute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_maincolor"
+                android:text="执法完成"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white_ffffff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

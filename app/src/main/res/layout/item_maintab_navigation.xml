@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <ImageView
+
+            android:layout_gravity="center"
+            android:id="@+id/ivTab"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+
+            android:text="首页"
+            android:textColor="@drawable/index_selector_text"
+            android:id="@+id/tvTabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorGrayLine"
+        android:layout_alignParentLeft="true"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"></View>
+</RelativeLayout>

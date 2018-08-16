@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLine"></View>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20sp"
+        android:focusable="true"
+        android:gravity="center"/>
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_blow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>
