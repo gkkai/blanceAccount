@@ -539,7 +539,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
 //                            ProxyUtils.GetHttpCheckProxy().addZw(this, zw_dz_key, zw_year, zw_month, zw_company, zw_company_name
 //                                    , zw_dz_company, zw_dz_company_name, zw_qc_zy_wu, zw_qc_zy_zb, zw_qc_gk_gck, zw_byjy_zy_wu, zw_byjy_zy_zb, zw_byjy_gk_gck
 //                                    , zw_byzf_zy_wu, zw_byzf_zy_zb, zw_byzf_gk_gck, zw_wd_zy, zw_wd_zy_zgje, zw_wd_gk, zw_wd_gk_zgje, zw_is_ok, zw_wd_sm);
-                            ProxyUtils.PostHttpCheckProxy().checkFiance(this, zw_company, zw_dz_company, Integer.valueOf(zw_year), Integer.valueOf(zw_month), 1);
+                            ProxyUtils.PostHttpCheckProxy().checkFiance(this,  zw_dz_company, zw_company,Integer.valueOf(zw_year), Integer.valueOf(zw_month), 1);
 
 
                         } catch (Exception e) {
@@ -901,7 +901,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
 
 
         }catch (NumberFormatException e){
-            ToastUtils.show("输入金额太大");
+            //ToastUtils.show("输入金额太大");
 
 
         }
@@ -943,7 +943,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_qc_zy_wu.getText().toString().replaceAll(",","");
                         edit_qc_zy_wu.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_qc_zy_wu.getText().toString())){
+                        if(!"".equals(edit_qc_zy_wu.getText().toString())&&!"-".equals(edit_qc_zy_wu.getText().toString())){
                             edit_qc_zy_wu.setText(df.format(Double.valueOf(edit_qc_zy_wu.getText().toString())));
                         }
                     }
@@ -957,7 +957,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_gk_zgje.getText().toString().replaceAll(",","");
                         edit_gk_zgje.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_gk_zgje.getText().toString())){
+                        if(!"".equals(edit_gk_zgje.getText().toString())&&!"-".equals(edit_gk_zgje.getText().toString())){
                             edit_gk_zgje.setText(df.format(Double.valueOf(edit_gk_zgje.getText().toString())));
                         }
                     }
@@ -970,7 +970,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_gk_wd.getText().toString().replaceAll(",","");
                         edit_gk_wd.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_gk_wd.getText().toString())){
+                        if(!"".equals(edit_gk_wd.getText().toString())&&!"-".equals(edit_gk_wd.getText().toString())){
                             edit_gk_wd.setText(df.format(Double.valueOf(edit_gk_wd.getText().toString())));
                         }
                     }
@@ -983,7 +983,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_zglj_zy.getText().toString().replaceAll(",","");
                         edit_zglj_zy.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_zglj_zy.getText().toString())){
+                        if(!"".equals(edit_zglj_zy.getText().toString())&&!"-".equals(edit_zglj_zy.getText().toString())){
                             edit_zglj_zy.setText(df.format(Double.valueOf(edit_zglj_zy.getText().toString())));
                         }
                     }
@@ -996,7 +996,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_wd_zy.getText().toString().replaceAll(",","");
                         edit_wd_zy.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_wd_zy.getText().toString())){
+                        if(!"".equals(edit_wd_zy.getText().toString())&&!"-".equals(edit_wd_zy.getText().toString())){
                             edit_wd_zy.setText(df.format(Double.valueOf(edit_wd_zy.getText().toString())));
                         }
                     }
@@ -1009,7 +1009,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_qc_zy_zb.getText().toString().replaceAll(",","");
                         edit_qc_zy_zb.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_qc_zy_zb.getText().toString())){
+                        if(!"".equals(edit_qc_zy_zb.getText().toString())&&!"-".equals(edit_qc_zy_zb.getText().toString())){
                             edit_qc_zy_zb.setText(df.format(Double.valueOf(edit_qc_zy_zb.getText().toString())));
                         }
                     }
@@ -1022,7 +1022,8 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_qc_gk_gck.getText().toString().replaceAll(",","");
                         edit_qc_gk_gck.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_qc_gk_gck.getText().toString())){
+                       String s= edit_byjy_zy_wu.getText().toString();
+                        if(!"".equals(edit_qc_gk_gck.getText().toString())&&!"-".equals(edit_qc_gk_gck.getText().toString())){
                             edit_qc_gk_gck.setText(df.format(Double.valueOf(edit_qc_gk_gck.getText().toString())));
                         }
                     }
@@ -1035,7 +1036,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_byjy_zy_wu.getText().toString().replaceAll(",","");
                         edit_byjy_zy_wu.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_byjy_zy_wu.getText().toString())){
+                        if(!"".equals(edit_byjy_zy_wu.getText().toString())&&!"-".equals(edit_byjy_zy_wu.getText().toString())){
                             edit_byjy_zy_wu.setText(df.format(Double.valueOf(edit_byjy_zy_wu.getText().toString())));
                         }
 
@@ -1049,7 +1050,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_byjy_zy_zb.getText().toString().replaceAll(",","");
                         edit_byjy_zy_zb.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_byjy_zy_zb.getText().toString())){
+                        if(!"".equals(edit_byjy_zy_zb.getText().toString())&&!"-".equals(edit_byjy_zy_zb.getText().toString())){
                             edit_byjy_zy_zb.setText(df.format(Double.valueOf(edit_byjy_zy_zb.getText().toString())));
                         }
                     }
@@ -1062,7 +1063,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_bujy_gk_gck.getText().toString().replaceAll(",","");
                         edit_bujy_gk_gck.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_bujy_gk_gck.getText().toString())){
+                        if(!"".equals(edit_bujy_gk_gck.getText().toString())&&!"-".equals(edit_bujy_gk_gck.getText().toString())){
                             edit_bujy_gk_gck.setText(df.format(Double.valueOf(edit_bujy_gk_gck.getText().toString())));
                         }
                     }
@@ -1075,7 +1076,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_byjy_zf_wu.getText().toString().replaceAll(",","");
                         edit_byjy_zf_wu.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_byjy_zf_wu.getText().toString())){
+                        if(!"".equals(edit_byjy_zf_wu.getText().toString())&&!"-".equals(edit_byjy_zf_wu.getText().toString())){
                             edit_byjy_zf_wu.setText(df.format(Double.valueOf(edit_byjy_zf_wu.getText().toString())));
                         }
                     }
@@ -1088,7 +1089,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_byjy_zf_zb.getText().toString().replaceAll(",","");
                         edit_byjy_zf_zb.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_byjy_zf_zb.getText().toString())){
+                        if(!"".equals(edit_byjy_zf_zb.getText().toString())&&!"-".equals(edit_byjy_zf_zb.getText().toString())){
                             edit_byjy_zf_zb.setText(df.format(Double.valueOf(edit_byjy_zf_zb.getText().toString())));
                         }
                     }
@@ -1101,7 +1102,7 @@ public class BuildAccountActivity extends BaseActivity implements View.OnClickLi
                         String s=edit_bujy_zf_gck.getText().toString().replaceAll(",","");
                         edit_bujy_zf_gck.setText(df.format(Double.valueOf(s)));
                     }else {
-                        if(!"".equals(edit_bujy_zf_gck.getText().toString())){
+                        if(!"".equals(edit_bujy_zf_gck.getText().toString())&&!"-".equals(edit_bujy_zf_gck.getText().toString())){
                             edit_bujy_zf_gck.setText(df.format(Double.valueOf(edit_bujy_zf_gck.getText().toString())));
                         }
                     }

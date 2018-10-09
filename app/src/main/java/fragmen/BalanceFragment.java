@@ -75,7 +75,7 @@ public class BalanceFragment extends BaseFragment {
         Double zw_sum=MyApplication.findFinanceBean.getData().getZw_qc_zy_wu() + MyApplication.findFinanceBean.getData().getZw_qc_zy_zb();
         tv_zw_sum.setText(df.format(zw_sum));
         tv_zq_qu_gk_gck.setText(df.format(MyApplication.findFinanceBean.getData().getZq_qc_gk_gck()));
-        tv_zw_qu_gk_gck.setText("¥" + MyApplication.findFinanceBean.getData().getZw_qc_gk_gck());
+        tv_zw_qu_gk_gck.setText(df.format( MyApplication.findFinanceBean.getData().getZw_qc_gk_gck()));
         if (MyApplication.findFinanceBean.getData().getZw_qc_zy_wu() == MyApplication.findFinanceBean.getData().getZq_qc_zy_wu()
                 && MyApplication.findFinanceBean.getData().getZq_qc_zy_zb() == MyApplication.findFinanceBean.getData().getZw_qc_zy_zb()) {
             //TODO 变化颜色
