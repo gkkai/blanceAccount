@@ -10,6 +10,7 @@
     <TextView
         android:background="@color/backgroud"
     android:id="@+id/tv_title_train"
+
     style="@style/ActionBar.CenterTitle"
         android:textColor="@color/white_ffffff"
     android:text="业务链" />
